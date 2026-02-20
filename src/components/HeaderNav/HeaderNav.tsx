@@ -4,7 +4,7 @@ export function HeaderNav() {
   return (
     <div className="header-nav">
       <div className="grid-container header-nav__grid">
-        <h1 className="header-nav__title">Felipe Silva</h1>
+        <span className="header-nav__title">Felipe Silva</span>
         <nav className="header-nav__list">
           <ul>
             <li>

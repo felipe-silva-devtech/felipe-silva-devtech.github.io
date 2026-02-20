@@ -9,25 +9,26 @@ export function HomePage() {
       </div>
 
       <div className="home-page__greetings">
-        <h2>
+        <h1>
           <span>Olá! Eu sou</span>
-          <span>Felipe Silva</span>
+          <span>Felipe Silva,</span>
           <span>Desenvolvedor Front-end</span>
-        </h2>
+        </h1>
       </div>
 
       <div className="home-page__resume">
         <div className="home-page__resume__section">
-          <h3>Sobre mim</h3>
+          <h2>Sobre mim</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
             consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
             quisque faucibus ex sapien vitae.
           </p>
-          <a href="#">Saiba mais →</a>
+          <a href="#">Mais sobre mim →</a>
         </div>
+        <hr />
         <div className="home-page__resume__section">
-          <h3>Especialidades</h3>
+          <h2>Especialidades</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
             consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
@@ -35,8 +36,9 @@ export function HomePage() {
           </p>
           <a href="#">Projetos que trabalhei →</a>
         </div>
+        <hr />
         <div className="home-page__resume__section">
-          <h3>Entre em contato</h3>
+          <h2>Entre em contato</h2>
           <SocialBar />
         </div>
       </div>
