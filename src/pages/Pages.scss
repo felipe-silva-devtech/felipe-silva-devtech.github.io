@@ -1,0 +1,10 @@
+.pages {
+  height: 100%;
+  padding-top: var(--header-padding) !important;
+
+  background-color: var(--surface-primary-color);
+
+  & > * {
+    grid-column: 1 / -1;
+  }
+}

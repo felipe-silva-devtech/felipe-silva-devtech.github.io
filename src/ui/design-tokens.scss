@@ -1,0 +1,39 @@
+:root {
+  // Base Palette
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-blue-10: #d0ceff;
+  --color-blue-20: #989dff;
+  --color-blue-30: #6c80ff;
+  --color-blue-40: #4a6ef6;
+  --color-blue-50: #3361e6;
+  --color-blue-60: #1956d9;
+  --color-blue-70: #004dca;
+  --color-blue-80: #0046ba;
+  --color-blue-90: #0040ab;
+  --color-blue-100: #003a9d;
+
+  --color-gray-10: #eff4ff;
+  --color-gray-20: #99a0ad;
+  --color-gray-30: #767c89;
+  --color-gray-40: #606673;
+  --color-gray-50: #515763;
+  --color-gray-60: #454b56;
+  --color-gray-70: #3a404c;
+  --color-gray-80: #313742;
+  --color-gray-90: #292f3a;
+  --color-gray-100: #212731;
+
+  --primary-color: var(--color-blue-70);
+  --text-on-primary-color: var(--color-white);
+
+  --surface-primary-color: var(--color-gray-100);
+  --text-on-surface-primary-color: var(--color-white);
+
+  --header-padding: 80px;
+
+  --opacity-low: 0.16;
+  --opacity-low: 0.48;
+  --opacity-high: 0.8;
+}

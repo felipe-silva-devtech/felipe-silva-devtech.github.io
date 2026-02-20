@@ -1,0 +1,21 @@
+@forward "./ui/design-tokens.scss";
+@forward "./ui/typography.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}

@@ -1,0 +1,97 @@
+.home-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__profile-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    & img {
+      height: 100%;
+
+      filter: drop-shadow(0 0 8px var(--color-gray-50));
+    }
+  }
+
+  &__greetings {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    & h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & span:nth-child(1) {
+        font-size: 24px;
+      }
+
+      & span:nth-child(2) {
+        padding-top: 8px;
+        font-size: 48px;
+        text-transform: uppercase;
+      }
+
+      & span:nth-child(3) {
+        padding-top: 12px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__resume {
+    position: absolute;
+    right: 0;
+
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &__section {
+      width: 100%;
+      padding: 24px 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+      border-top: 1px solid black;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      & p {
+        font-size: 12px;
+      }
+
+      & a {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }
+}
