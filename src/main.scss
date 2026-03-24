@@ -1,5 +1,6 @@
 @forward "@ui/design-tokens.scss";
 @forward "@ui/typography.scss";
+@use "@ui/viewports" as viewports;
 
 * {
   box-sizing: border-box;
@@ -18,4 +19,8 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 16px;
+
+  @include viewports.mq("tablet") {
+    padding: 0 24px;
+  }
 }

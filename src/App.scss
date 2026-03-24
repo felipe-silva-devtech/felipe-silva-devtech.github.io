@@ -8,9 +8,5 @@
   min-height: 720px;
   overflow: hidden;
 
-  @include viewports.mq("laptop") {
-    min-height: 950px;
-  }
-
   background-color: var(--color-gray-90);
 }

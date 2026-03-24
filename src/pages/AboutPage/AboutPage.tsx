@@ -3,7 +3,9 @@ import "./AboutPage.scss";
 export function AboutPage() {
   return (
     <div className="about-page" id="about" data-section-type="page">
-      <div className="about-page__photo"></div>
+      <div className="about-page__photo">
+        <div className="about-page__photo__img"></div>
+      </div>
 
       <div className="about-page__content">
         <div className="about-page__content__section">

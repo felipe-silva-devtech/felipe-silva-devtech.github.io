@@ -86,7 +86,7 @@
     width: 100%;
     max-width: 350px;
     height: 100%;
-    padding-top: 48px;
+    padding-top: var(--header-padding);
     padding-bottom: 24px;
 
     display: flex;
@@ -97,7 +97,6 @@
 
     @include viewports.mq("laptop") {
       justify-content: flex-end;
-      padding-top: var(--header-padding);
     }
 
     & hr {
