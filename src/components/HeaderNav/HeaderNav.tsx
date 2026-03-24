@@ -1,6 +1,10 @@
 import "./HeaderNav.scss";
 
-export function HeaderNav() {
+export function HeaderNav({
+  onPageChange,
+}: {
+  onPageChange: (page: string) => void;
+}) {
   return (
     <div className="header-nav">
       <div className="grid-container header-nav__grid">
@@ -8,16 +12,48 @@ export function HeaderNav() {
         <nav className="header-nav__list">
           <ul>
             <li>
-              <a href="#home">Início</a>
+              <a
+                href=""
+                onClick={(evt) => {
+                  evt.preventDefault();
+                  onPageChange("home");
+                }}
+              >
+                Início
+              </a>
             </li>
             <li>
-              <a href="#about">Sobre</a>
+              <a
+                href=""
+                onClick={(evt) => {
+                  evt.preventDefault();
+                  onPageChange("about");
+                }}
+              >
+                Sobre
+              </a>
             </li>
             <li>
-              <a href="#portfolio">Portfólio</a>
+              <a
+                href=""
+                onClick={(evt) => {
+                  evt.preventDefault();
+                  onPageChange("portfolio");
+                }}
+              >
+                Portfólio
+              </a>
             </li>
             <li>
-              <a href="#fsdt-libs">FSDT Libs</a>
+              <a
+                href=""
+                onClick={(evt) => {
+                  evt.preventDefault();
+                  onPageChange("fsdt-libs");
+                }}
+              >
+                FSDT Libs
+              </a>
             </li>
           </ul>
         </nav>

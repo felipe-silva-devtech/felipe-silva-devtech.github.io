@@ -1,9 +1,13 @@
 import { SocialBar } from "@/components/SocialBar/SocialBar";
 import "./HomePage.scss";
 
-export function HomePage() {
+export function HomePage({
+  onPageChange,
+}: {
+  onPageChange: (page: string) => void;
+}) {
   return (
-    <div className="home-page">
+    <div className="home-page" id="home" data-section-type="page">
       <div className="home-page__profile-background">
         <img src="/images/profile-home.png" alt="Foto de Perfil" />
       </div>
@@ -24,7 +28,15 @@ export function HomePage() {
             consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
             quisque faucibus ex sapien vitae.
           </p>
-          <a href="#">Mais sobre mim →</a>
+          <a
+            href=""
+            onClick={(evt) => {
+              evt.preventDefault();
+              onPageChange("about");
+            }}
+          >
+            Mais sobre mim →
+          </a>
         </div>
         <hr />
         <div className="home-page__resume__section">
@@ -34,7 +46,15 @@ export function HomePage() {
             consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
             quisque faucibus ex sapien vitae.
           </p>
-          <a href="#">Projetos que trabalhei →</a>
+          <a
+            href=""
+            onClick={(evt) => {
+              evt.preventDefault();
+              onPageChange("portfolio");
+            }}
+          >
+            Projetos que trabalhei →
+          </a>
         </div>
         <hr />
         <div className="home-page__resume__section">
