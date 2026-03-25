@@ -4,8 +4,8 @@
   position: relative;
 
   width: 100%;
+  min-width: var(--breakpoint-tablet);
   height: 100dvh;
-  min-height: 720px;
   overflow: hidden;
 
   background-color: var(--color-gray-90);

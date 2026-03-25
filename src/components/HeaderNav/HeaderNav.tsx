@@ -38,10 +38,10 @@ export function HeaderNav({
                 href=""
                 onClick={(evt) => {
                   evt.preventDefault();
-                  onPageChange("portfolio");
+                  onPageChange("career");
                 }}
               >
-                Portfólio
+                Carreira
               </a>
             </li>
             <li>

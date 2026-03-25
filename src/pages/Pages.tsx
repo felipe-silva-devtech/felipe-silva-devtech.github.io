@@ -4,6 +4,7 @@ import "./Pages.scss";
 
 import { HomePage } from "./HomePage/HomePage";
 import { AboutPage } from "./AboutPage/AboutPage";
+import { CareerPage } from "./CareerPage/CareerPage";
 
 export function Pages({
   currentPage,
@@ -32,6 +33,7 @@ export function Pages({
     <div className="grid-container pages">
       <HomePage onPageChange={onPageChange} />
       <AboutPage />
+      <CareerPage />
     </div>
   );
 }

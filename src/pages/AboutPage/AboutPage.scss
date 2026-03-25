@@ -34,7 +34,7 @@
         url("/images/photo-about.webp");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position-x: left;
+      background-position-x: left 30%;
       background-position-y: center;
 
       @include viewports.mq("laptop") {
